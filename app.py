@@ -6,7 +6,7 @@ from tensorflow import keras
 
 CLASS_LABELS = ['Abuse','Arrest','Arson','Assault','Burglary','Explosion','Fighting',"Normal",'RoadAccidents','Robbery','Shooting','Shoplifting','Stealing','Vandalism']
 preprocess_fun = keras.applications.densenet.preprocess_input
-model = keras.models.load_model('anomaly_model.h5')
+model = keras.models.load_model(r'anomaly_model.h5')
 
 def process_frame(frame):
     
